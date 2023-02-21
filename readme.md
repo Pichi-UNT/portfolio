@@ -1,9 +1,8 @@
-# 50 Projects in 50 Days - HTML/CSS and JavaScript
+# PichiDev Portfolio - HTML/CSS, JavaScript , Java - Spring And Golang
 
-This is the main repository for all of the projects in the course.
+This is the main repository for my personal projects.
 
-- [Course Link](https://www.udemy.com/course/50-projects-50-days)
-- [Course Info Website](https://50projects50days.com)
+- [LinkedIn](https://www.linkedin.com/in/agustin-carrizo-avellaneda-533727229/)
 
 |  #  | Project                                                                                                                   | Live Demo                                                                         |
 | :-: | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |

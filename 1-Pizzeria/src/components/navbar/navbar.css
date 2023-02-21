@@ -1,0 +1,150 @@
+header {
+  width: 100%;
+  display: flex;
+  background-color: var(--color-background);
+  justify-content: flex-start;
+  align-items: center;
+  height: 75px;
+  padding: 0 30px;
+  margin-top: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+/* All Children of the header with the same space */
+header > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.logo img {
+  width: 130px;
+  cursor: pointer;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+.sidepanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  background: #333;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transform: translatex(100%);
+  transition: transform 0.5s ease-out;
+}
+
+.sidepanel-active {
+  transform: translatex(0%);
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  height: 130px;
+  text-align: center;
+}
+
+.main-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-texto);
+  font-size: 20px;
+  text-transform: uppercase;
+  background: linear-gradient(currentColor, currentColor);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
+}
+
+.main-menu a:hover,
+.social-container a:hover,
+.btn-close:hover {
+  color: var(--color-secundario);
+  background-size: 50% 2px;
+}
+
+.btn-close {
+  color: var(--color-texto);
+  font-size: 30px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.social-container a {
+  font-size: 20px;
+  padding: 0 0.8rem;
+  text-transform: uppercase;
+  color: var(--color-texto);
+  transition: color 0.5s;
+}
+
+.btn-mobile {
+  padding-right: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-mobile i {
+  color: var(--color-texto);
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 650px) {
+  header {
+    position: static;
+  }
+
+  .sidepanel {
+    flex-direction: row;
+    position: static;
+    z-index: 0;
+    background: none;
+    transform: translatex(0%);
+    transition: none;
+  }
+
+  .btn-close,
+  .btn-mobile {
+    display: none;
+  }
+
+  .logo {
+    flex-grow: 0;
+  }
+
+  .main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 2;
+  }
+
+  .main-menu a {
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+    font-size: 14px;
+  }
+
+  .social-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 16px;
+  }
+}

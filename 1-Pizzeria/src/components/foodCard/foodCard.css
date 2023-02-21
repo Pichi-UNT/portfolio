@@ -1,0 +1,94 @@
+.food-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.food-card-content {
+  /* background-color: aqua; */
+  order: 1;
+}
+
+.food-card-content h2 {
+  font-size: 3vw;
+  text-transform: lowercase;
+  font-weight: 100;
+}
+
+.food-card-content h1 {
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.food-card-content p {
+  color: var(--color-texto);
+  font-style: italic;
+  text-align: justify;
+  padding-bottom: 1.25rem;
+}
+
+.food-card-photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-card-photo img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.food-card-photo img:hover {
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+}
+
+button span {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 650px) {
+  .food-card-photo {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .food-card {
+    padding: 0 7rem;
+    flex-direction: row;
+  }
+  .food-card-content {
+    order: 0;
+  }
+
+  .food-card-content {
+    width: 40%;
+  }
+  .food-card-photo {
+    width: 60%;
+  }
+
+  .food-card-content h2 {
+    font-size: 2.2vw;
+    text-transform: lowercase;
+    font-weight: 100;
+  }
+
+  .food-card-content h1 {
+    font-size: 5vw;
+  }
+  .food-card-content p {
+    color: var(--color-texto);
+    font-style: italic;
+    text-align: justify;
+    padding-bottom: 1.25rem;
+  }
+}

@@ -1,0 +1,60 @@
+.carousel {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.carousel-item-container {
+  flex-direction: row;
+  white-space: nowrap;
+  /* height: 100%; */
+  /*buscar en video explicacion de esto*/
+  height: calc(100vh - 80px);
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  white-space: normal;
+}
+
+.carousel > button:hover {
+  background: var(--color-backgroud-sombra);
+}
+
+.carousel > button {
+  width: 40px;
+  height: 10%;
+  color: var(--color-secundario);
+  position: absolute;
+  top: 45%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  margin: 0 30px;
+  border: none;
+  z-index: 1;
+}
+
+.btn-carousel-left {
+  left: 0;
+}
+
+.btn-carousel-right {
+  right: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .carousel > button {
+    font-size: 50px;
+    top: 35%;
+    margin: 0 15px;
+  }
+}

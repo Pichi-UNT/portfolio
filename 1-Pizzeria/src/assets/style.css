@@ -1,0 +1,29 @@
+/* @import url("src/components/navbar/navbar.css"); no anda por alguna razon*/
+:root {
+  --color-primario: #fcb03b;
+  --color-secundario: #e92f3d;
+  --color-backgroud-sombra: #e92f3d30;
+  --color-background: #eff6f5;
+  --color-texto: #a1a5a6;
+  --text-default: "Open Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--text-defaul);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  min-width: 380px;
+}
+
+.section {
+  width: 100%;
+}

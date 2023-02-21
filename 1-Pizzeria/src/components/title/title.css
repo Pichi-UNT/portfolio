@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+}
+
+.title h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-primario);
+}
+
+.title h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}

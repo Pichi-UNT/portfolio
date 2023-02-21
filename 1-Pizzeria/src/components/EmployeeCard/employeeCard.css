@@ -1,0 +1,96 @@
+.employee-card {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+  transition: width 0.3s;
+}
+.employee-card:hover img {
+  filter: grayscale(0%);
+}
+
+.employee-card img {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: grayscale(80%);
+}
+
+.employee-info {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.1s, bottom 0.1s 0.3s;
+  text-align: center;
+}
+.employee-card:hover .employee-info {
+  opacity: 1;
+  bottom: 60px;
+  transition-delay: 0.3s;
+}
+
+.employee-card:hover {
+  width: 150%;
+}
+
+.employee-info h2 {
+  font-size: 30px;
+  color: #000;
+  font-weight: 600;
+  text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+}
+.employee-info h3 {
+  color: var(--color-secundario);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 3px rgb(255 0 0 / 50%);
+  text-transform: capitalize;
+}
+.employee-info .social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.employee-info .social-container a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-secundario);
+  border-radius: 50%;
+}
+
+.employee-info .social-container a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-secundario);
+  border-radius: 50%;
+  transition: color 0.5s, transform 0.5s, background-color 0.5s;
+  font-size: 18px;
+}
+
+.employee-info .social-container a:hover {
+  transform: scale(2);
+  background: transparent;
+  color: var(--color-secundario);
+}

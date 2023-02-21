@@ -1,0 +1,40 @@
+.alerts {
+  z-index: 2;
+}
+
+.alert {
+  padding: 20px 30px;
+  font-size: 20px;
+  transform: translateY(-300%);
+  position: fixed;
+  top: 12%;
+  left: 50px;
+  right: 50px;
+  transition: transform 0.5s;
+}
+
+.show-alert {
+  display: block;
+  transform: translateY(0%);
+}
+
+#alertError {
+  background: #f8d7da;
+  border-right: 4px solid #da3748;
+}
+#alertError span {
+  color: #da3748;
+}
+#alertSuccess {
+  background: #d4edda;
+  border-right: 4px solid #279e43;
+}
+#alertSuccess span {
+  color: #279e43;
+}
+
+@media screen and (min-width: 650px) {
+  .alert {
+    top: 30px;
+  }
+}

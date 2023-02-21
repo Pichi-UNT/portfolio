@@ -6,5 +6,5 @@ This is the main repository for my personal projects.
 
 |  #  | Project                                                                                                                   | Live Demo                                                                         |
 | :-: | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| 01  | [Pizzeria Project](https://github.com/Pichi-UNT/portfolio/tree/master/1-Pizzeria)                           | [Live Demo](https://pizzeria.pichidev.com.ar/)               |
+| 01  | [Pizzeria Project](https://github.com/Pichi-UNT/portfolio/tree/master/1-Pizzeria)                           | [Link](https://pizzeria.pichidev.com.ar/)               |
 

@@ -10,6 +10,6 @@ export function Menu({ menuItems, action }) {
     $a.href = element.href;
     $nav.appendChild($a);
   });
-  if (action != undefined) $nav.addEventListener("click", action);
+  if (action) $nav.addEventListener("click", action);
   return $nav;
 }

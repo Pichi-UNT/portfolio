@@ -68,13 +68,16 @@ function contactValidate(e) {
   const inputName = d.getElementById("name");
   const inputEmail = d.getElementById("email");
   const textArea = d.getElementById("textarea");
-  if (inputName.value == 0 || inputEmail.value == 0 || textArea.value == 0) {
+  if (
+    inputName.value.length === 0 ||
+    inputEmail.value.length === 0 ||
+    textArea.value.length === 0
+  ) {
     alertError.classList.add("show-alert");
     setTimeout(function () {
       alertError.classList.remove("show-alert");
     }, alertDuration);
   } else {
-    console.log("chipi");
     alertSucces.classList.add("show-alert");
     setTimeout(function () {
       alertSucces.classList.remove("show-alert");

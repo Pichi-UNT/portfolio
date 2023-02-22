@@ -10,7 +10,7 @@ export function FieldTextArea({
   icon = false,
   classIcon,
 }) {
-  if (id == undefined || name == undefined) {
+  if (!id || !name) {
     console.log("Error params in Field component");
     return;
   }

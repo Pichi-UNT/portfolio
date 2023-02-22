@@ -12,13 +12,13 @@ export function Field({
   icon = false,
   classIcon,
 }) {
-  if (id == undefined || name == undefined) {
+  if (!id || !name) {
     console.log("Error params in Field component");
     return;
   }
 
   const $div = d.createElement("div");
-  if (classField != undefined) {
+  if (classField) {
     $div.classList.add(classField);
   }
   const $input = d.createElement("input");

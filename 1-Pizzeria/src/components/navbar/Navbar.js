@@ -12,8 +12,6 @@ export function Navbar() {
   let screenSize = $body.offsetWidth;
   const $header = d.createElement("header");
 
-  // add div for title or icon if exists
-
   $header.appendChild(IconBar("src/assets/img/logo.png"));
   const menuItems = [
     { href: "#services", text: "servicios" },
@@ -21,8 +19,8 @@ export function Navbar() {
     { href: "#contact", text: "contacto" },
   ];
 
-  $header.appendChild(MenuButton(openSidePanel)); //openSidePanel
-  const arrowBtn = ArrowButton(closeSidePanel); //closeSidePanel
+  $header.appendChild(MenuButton(openSidePanel));
+  const arrowBtn = ArrowButton(closeSidePanel);
   arrowBtn.classList.add("btn-close");
   const menu = Menu({ menuItems: menuItems, action: closeSidePanel });
 
@@ -42,7 +40,6 @@ function openSidePanel() {
 }
 
 function closeSidePanel(e) {
-  console.log(e.target);
   const sidePanel = d.querySelector(".sidepanel");
   sidePanel.classList.remove("sidepanel-active");
 }

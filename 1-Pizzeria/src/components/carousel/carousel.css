@@ -7,8 +7,6 @@
 .carousel-item-container {
   flex-direction: row;
   white-space: nowrap;
-  /* height: 100%; */
-  /*buscar en video explicacion de esto*/
   height: calc(100vh - 80px);
   width: 100%;
   min-width: 100%;
@@ -26,6 +24,7 @@
 
 .carousel > button:hover {
   background: var(--color-backgroud-sombra);
+  cursor: pointer;
 }
 
 .carousel > button {
@@ -42,7 +41,6 @@
   border: none;
   z-index: 1;
 }
-
 .btn-carousel-left {
   left: 0;
 }

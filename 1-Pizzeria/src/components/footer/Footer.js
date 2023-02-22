@@ -9,14 +9,3 @@ export function Footer() {
     '<div class="footer-item"><i class="fab fa-twitter"></i><span>@worldpizza</span></div>';
   return $footer;
 }
-
-/*
-
-<footer>
-  <div>
-
-  </div>
-
-</footer> 
-
-*/

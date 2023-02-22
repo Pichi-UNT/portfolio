@@ -12,13 +12,13 @@ export function RectangularButton(
   if (isAnimated) {
     $button.classList.add("rectangular-button-animation");
   }
-  if (className != "") {
+  if (className) {
     $button.classList.add(className);
   }
 
   $button.textContent = buttonText;
 
-  if (action != undefined) {
+  if (action) {
     $button.addEventListener("click", action);
   }
   return $button;

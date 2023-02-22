@@ -53,10 +53,3 @@ export function FoodSection() {
 
   return $section;
 }
-/*    FoodCard({
-      title: "peperoni",
-      type: "premium",
-      paragraph:
-        "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident debitis nihil incidunt quisquam ab reiciendis consequuntur iure.",
-      src: "src/assets/img/menu/peperoni.png",
-    })*/

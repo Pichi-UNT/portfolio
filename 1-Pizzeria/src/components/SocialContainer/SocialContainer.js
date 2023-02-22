@@ -10,12 +10,3 @@ export function SocialContainer() {
 
   return $div;
 }
-
-/*               <div class="sociales">
-                    <a href="#"><span class="fab fa-facebook"></span></a>
-                    <a href="#"><span class="fab fa-instagram"></span></a>
-                    <a href="#"><span class="fab fa-twitter"></span></a>
-                    <a href="#"><span class="fab fa-youtube"></span></a>
-               </div>
-               
-               */

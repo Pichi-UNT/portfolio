@@ -21,14 +21,14 @@ function info() {
   const panelLeft = Panel();
   panelLeft.appendChild(
     ServicesItem(
-      "fa-cheese",
+      "fas fa-cheese",
       "Ingredientes",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit, epellendus."
     )
   );
   panelLeft.appendChild(
     ServicesItem(
-      "fa-pizza-slice",
+      "fas fa-pizza-slice",
       "Calidad",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit, epellendus."
     )
@@ -37,14 +37,14 @@ function info() {
   const panelRight = Panel();
   panelRight.appendChild(
     ServicesItem(
-      "fa-clock",
+      "fas fa-clock",
       "Rapidez",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit, epellendus."
     )
   );
   panelRight.appendChild(
     ServicesItem(
-      "fa-shipping-fast",
+      "fas fa-shipping-fast",
       "Delivery",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit, epellendus."
     )
@@ -74,10 +74,8 @@ function ServicesItem(spanClass, itemTitle, itemText) {
   $p.textContent = itemText;
 
   const circleButton = CircleButton();
-  //Add class span
   const $span = d.createElement("span");
-  $span.classList.add("fas");
-  $span.classList.add(spanClass);
+  $span.className += spanClass;
 
   circleButton.appendChild($span);
   $div.appendChild(circleButton);

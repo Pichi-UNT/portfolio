@@ -6,7 +6,7 @@ export function ArrowButton(action, right = true) {
   } else {
     $i.classList.add("fa-angle-left");
   }
-  if (action != undefined) {
+  if (action) {
     $i.addEventListener("click", action);
   }
   return $i;

@@ -4,7 +4,7 @@ const d = document;
 
 function CarouselButton(right = true) {
   const btn = d.createElement("button");
-  if (right == true) {
+  if (right) {
     btn.classList.add("btn-carousel-right");
     btn.innerHTML += '<span class="fas fa-angle-right"></span>';
     btn.addEventListener("click", () => {
@@ -59,7 +59,6 @@ let index = 0;
 function next(delta) {
   const carouselItemContainer = d.querySelector(".carousel-item-container");
   const finalIndex = carouselItemContainer.childElementCount - 1;
-  console.log(index);
   if (index + delta > finalIndex) {
     index = 0;
   } else if (index + delta < 0) {

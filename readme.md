@@ -7,5 +7,5 @@ This is the main repository for my personal projects.
 |  #  | Project                                                                                                                   | Link                                                                        |
 | :-: | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 01  | [Pizzeria Project](https://github.com/Pichi-UNT/portfolio/tree/master/1-Pizzeria)                           | [Live Demo](https://pizzeria.pichidev.com.ar/)               |
-| 02  | [Notes App](https://github.com/Pichi-UNT/portfolio/tree/master/1-Pizzeria)                           | [Live Demo](https://notes.pichidev.com.ar/)               |
+| 02  | [Notes App](https://github.com/Pichi-UNT/portfolio/tree/master/2-NotesApp/notes-app)                           | [Live Demo](https://notes.pichidev.com.ar/)               |
 

@@ -1,4 +1,4 @@
-# PichiDev Portfolio - HTML/CSS, JavaScript , Java - Spring And Golang
+# Portfolio - HTML/CSS, JavaScript , Java - Spring And Golang
 
 This is the main repository for my personal projects.
 
